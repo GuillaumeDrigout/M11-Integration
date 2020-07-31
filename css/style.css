@@ -1,1 +1,614 @@
+/* FONT FACE */
+/* Appelle les polices de la page */
+@-webkit-keyframes bounce {
+  0%, 20%, 53%, 80%, 100% {
+  -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  }
+  40%, 43% {
+  -webkit-transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+  transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+  -webkit-transform: translate3d(0, -30px, 0);
+  transform: translate3d(0, -30px, 0);
+  }
+  70% {
+  -webkit-transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+  transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+  -webkit-transform: translate3d(0, -15px, 0);
+  transform: translate3d(0, -15px, 0);
+  }
+  90% {
+  -webkit-transform: translate3d(0,-4px,0);
+  transform: translate3d(0,-4px,0);
+  }
+  }
+  
+  @keyframes bounce {
+  0%, 20%, 53%, 80%, 100% {
+  -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  }
+  40%, 43% {
+  -webkit-transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+  transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+  -webkit-transform: translate3d(0, -30px, 0);
+  transform: translate3d(0, -30px, 0);
+  }
+  70% {
+  -webkit-transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+  transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+  -webkit-transform: translate3d(0, -15px, 0);
+  transform: translate3d(0, -15px, 0);
+  }
+  90% { -webkit-transform: translate3d(0,-4px,0); transform: translate3d(0,-4px,0);
+  }
+  } 
+×
 
+@-webkit-keyframes jello {
+  from,
+  11.1%,
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  22.2% {
+    -webkit-transform: skewX(-12.5deg) skewY(-12.5deg);
+    transform: skewX(-12.5deg) skewY(-12.5deg);
+  }
+
+  33.3% {
+    -webkit-transform: skewX(6.25deg) skewY(6.25deg);
+    transform: skewX(6.25deg) skewY(6.25deg);
+  }
+
+  44.4% {
+    -webkit-transform: skewX(-3.125deg) skewY(-3.125deg);
+    transform: skewX(-3.125deg) skewY(-3.125deg);
+  }
+
+  55.5% {
+    -webkit-transform: skewX(1.5625deg) skewY(1.5625deg);
+    transform: skewX(1.5625deg) skewY(1.5625deg);
+  }
+
+  66.6% {
+    -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);
+    transform: skewX(-0.78125deg) skewY(-0.78125deg);
+  }
+
+  77.7% {
+    -webkit-transform: skewX(0.390625deg) skewY(0.390625deg);
+    transform: skewX(0.390625deg) skewY(0.390625deg);
+  }
+
+  88.8% {
+    -webkit-transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
+    transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
+  }
+}
+
+@keyframes jello {
+  from,
+  11.1%,
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  22.2% {
+    -webkit-transform: skewX(-12.5deg) skewY(-12.5deg);
+    transform: skewX(-12.5deg) skewY(-12.5deg);
+  }
+
+  33.3% {
+    -webkit-transform: skewX(6.25deg) skewY(6.25deg);
+    transform: skewX(6.25deg) skewY(6.25deg);
+  }
+
+  44.4% {
+    -webkit-transform: skewX(-3.125deg) skewY(-3.125deg);
+    transform: skewX(-3.125deg) skewY(-3.125deg);
+  }
+
+  55.5% {
+    -webkit-transform: skewX(1.5625deg) skewY(1.5625deg);
+    transform: skewX(1.5625deg) skewY(1.5625deg);
+  }
+
+  66.6% {
+    -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);
+    transform: skewX(-0.78125deg) skewY(-0.78125deg);
+  }
+
+  77.7% {
+    -webkit-transform: skewX(0.390625deg) skewY(0.390625deg);
+    transform: skewX(0.390625deg) skewY(0.390625deg);
+  }
+
+  88.8% {
+    -webkit-transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
+    transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
+  }
+}
+
+/*GLOBAL */
+/* Balises et class appelés à plusieurs endroits dans la page */
+* {
+    box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #FCFCFC;
+    
+}
+
+h1, h2, h3 {
+    font-family: 'Candal', sans-serif;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: 3rem;
+    color: white;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #254050;
+    border-top: dashed 1px;
+    border-left: dashed 1px;
+    border-right: dashed 1px;
+    padding: 25px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: #FB8A9B;
+}
+main {
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+main .fa {
+    padding-bottom: 18px;
+}
+/* HEADER */
+/* Ce qui concerne le header et la nav */
+header {
+    margin: 30px 0;
+}
+header img {
+    margin-left: -30px;
+    width: 95%;
+}
+header img:hover {
+    -webkit-animation-name: bounce;
+  animation-name: bounce;
+  -webkit-transform-origin: center bottom;
+  -ms-transform-origin: center bottom;
+  transform-origin: center bottom;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.fa {
+    display: block;
+    color: #FB8A9B;
+    font-size: 3rem;
+}
+nav a {
+    font-family: 'Candal', sans-serif;
+    color: #042734;
+}
+
+nav a:hover {
+    color: #FB8A9B;
+}
+
+nav a:hover .fa {
+    color: #042734;
+}
+
+#hebergement {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url("../img/background.jpg") no-repeat top left;
+    background-size: cover;
+    height: 450px;
+    padding: 50px;
+}
+
+#hebergement p {
+    font-size: 2rem;
+    font-family: 'Candal', sans-serif;
+    color: white;
+}
+input {
+    width: 100%;
+    background-color: #FB8A9B;
+    border: none;
+    height: 50px;
+    padding: 0 60px;
+}
+
+::-webkit-input-placeholder {
+   text-transform: uppercase;
+   color: #FDC8CE;
+}
+
+/* MAIN */
+/* Ce qui concerne le corps du site */
+
+#firstSection {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+#firstSection p {
+    text-align: left;
+}
+
+#secondSection {
+    display: flex;
+}
+
+#secondSection p {
+    text-align: left;
+}
+.sous-titre {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-size: 1.8rem;
+}
+
+/* FOOTER */
+/* Ce qui concerne le footer */
+
+footer {
+    background-color: #213E4E;
+    color: white;
+    
+}
+footer :visited {
+    color: white;
+}
+footer nav a {
+    font-size: 1.3rem;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+footer nav a:hover {
+    color: #FB8A9B;
+}
+
+#licence {
+    display: block;
+    text-align: center;
+    padding: 25px;
+}
+
+#licence img {
+    width: 50px;
+}
+
+#licence img:hover {
+    -webkit-animation-name: bounce;
+  animation-name: bounce;
+  -webkit-transform-origin: center bottom;
+  -ms-transform-origin: center bottom;
+  transform-origin: center bottom;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+/* VERSION TABLETTE */
+@media screen and (max-width: 1025px) {
+    
+    header img {
+        margin-left: 0;
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    nav {
+        flex-direction: column;
+    }
+    nav a {
+        margin: 20px;
+    }
+    
+    #firstSection {
+        flex-direction: column;
+    }
+    
+    #secondSection {
+        flex-direction: column;
+    }
+    
+    footer nav a {
+    font-size: 1.3rem;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 15px;
+    }
+}
+
+/* CSS PAGE MUTUALISÉ */
+h4 {
+    font-family: 'Candal', sans-serif;
+    color: white;
+    background-color: #213E4E;
+    padding: 15px;
+}
+
+.activePage {
+    color: #FB8A9B;
+}
+
+.activePage i {
+    color: #042734;
+}
+
+#serveur {
+    margin-bottom: 40px;
+}
+
+#serveur p {
+    text-align: left;
+}
+
+#domaine {
+    display: flex;
+    justify-content: space-between;
+}
+
+#domaine article {
+    border: dashed 1px #213E4E;
+    margin: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+}
+#domaine ul {
+    text-align: left;
+}
+#domaine .commande {
+    display: block;
+    background-color:#FB8A9B;
+    color: white;
+    padding: 15px;
+}
+#domaine h6 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    font-weight: bolder;
+}
+#domaine ul {
+    list-style-type: circle;
+}
+
+#domaine:hover article {
+    opacity: 0.33;
+    cursor: pointer;
+}
+
+#domaine:hover article:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+/* PAGE MUTUALISE VERSION TABLETTE */
+
+@media screen and (max-width: 1025px) {
+    #domaine {
+        flex-direction: column;
+    }
+}
+
+/* CSS PAGE DÉDIÉ */
+#serveur-dedie {
+    margin-bottom: 40px;
+}
+
+#serveur-dedie p {
+    text-align: left;
+}
+
+#serveur-dedie-type {
+    display: flex;
+    justify-content: space-around;
+}
+
+#serveur-dedie-type article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: dashed 1px #213E4E;
+    margin: 10px;
+    width: 33%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    
+}
+#serveur-dedie-type ul {
+    text-align: left;
+}
+#serveur-dedie-type .commande {
+    display: block;
+    background-color:#FB8A9B;
+    color: white;
+    padding: 15px;
+}
+#serveur-dedie-type h6 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    font-weight: bolder;
+}
+#serveur-dedie-type ul {
+    list-style-type: circle;
+}
+
+#serveur-dedie-type:hover article {
+    opacity: 0.33;
+    cursor: pointer;
+}
+
+#serveur-dedie-type:hover article:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1025px) {
+    #serveur-dedie-type {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #serveur-dedie-type article {
+        width: 100%;
+    }
+}
+
+/* CSS PAGE CONTACT */
+
+#contact2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+#contact2:hover article {
+    opacity: 0.33;
+}
+
+#contact2:hover article:hover {
+    opacity: 1;
+}
+
+#contact2 .fa {
+    border-bottom: dashed 1px;
+}
+#contact2 article {
+    width: 100%;
+    padding: 20px;
+}
+#contact2 .pinklink {
+    color: #FB8A9B;
+}
+
+#contact2 .adress {
+    font-weight: bolder;
+    font-style: italic;
+}
+
+#contact2 .adress2 {
+    font-weight: lighter;
+    font-style: italic;
+}
+
+#gmap {
+    border-top: solid 10px grey;
+    border-right: dashed 2px grey;
+}
+
+@media screen and (max-width: 1025px) {
+    #contact2 {
+        display: flex;
+        flex-direction: column;
+    }
+    #contact2 article {
+        padding: 40px;
+    }
+}
+
+/* CSS PAGE CLOUD */
+
+#cloud {
+    margin-bottom: 40px;
+}
+#cloud p {
+    text-align: left;
+}
+
+#cloud-type {
+    display: flex;
+    justify-content: space-around;
+}
+
+#cloud-type article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: dashed 1px #213E4E;
+    margin: 10px;
+    width: 33%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    
+}
+#cloud-type ul {
+    text-align: left;
+}
+#cloud-type .commande {
+    display: block;
+    background-color:#FB8A9B;
+    color: white;
+    padding: 15px;
+}
+#cloud-type h6 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    font-weight: bolder;
+}
+#cloud-type ul {
+    list-style-type: circle;
+}
+
+#cloud-type:hover article {
+    opacity: 0.33;
+    cursor: pointer;
+}
+
+#cloud-type:hover article:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1025px) {
+    #cloud-type {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #cloud-type article {
+        width: 100%;
+    }
+}
